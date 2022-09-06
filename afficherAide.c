@@ -1,0 +1,15 @@
+#include "fonctions.h"
+
+void afficherAide(){
+    printf("----------------------------------------------------------AIDE----------------------------------------------------------\n");
+    printf("     ------------------------------------------------Regles du jeu-------------------------------------------------\n\n");
+    printf("Parmi les lettres qui sont sur son chevalet, le joueur selectionne celles qu'il veut poser sur le plateau en les\necrivant en majuscule lorsque cela lui est demande. Le mot est place soit a l'horizontal soit a la verical. Il ne\npeut en aucun cas etre place en diagonale. Le premier mot doit imperativement recouvrir la case centrale\n(materialisee par #) et etre compose de deux lettres au minimum. Les mots suivant doivent etre places en s'appuyant\nsur des lettres deja existantes sur le plateau.\n\nA chaque tour les joueurs peuvent effectuer differentes actions:\n- Placer un mot;\n- Changer une ou plusieurs lettres (dans ce cas la, le joueur ne peut pas placer de mot apres);\n- Passer son tour;\n- Afficher l'aide;\n- Quitter le jeu.\n\nLa partie s'acheve lorsqu'un joueur decide de quitter le jeu ou lorsque la pioche est vide et qu'un joueur place ses\nderniere lettres sur la grille. Les lettres restantes sont ajoutees a son score tandis que les autres joueurs\ndoivent deduirent la valeurs des lettres restantes dans leur chevalet de leurs scores. Le vainqueur du jeu est le\njoueur qui a le plus de points a la fin de la partie.\n\n");
+    printf("     -----------------------------------------------Calcul du score------------------------------------------------\n\n");
+    printf("Certaines case du plateau sont materialisees  par des caracteres specifiques qui apportent des points. On a:\n- &: la lettre compte double;\t- %%: la lettre compte triple;\n- @: le mot compte double;\t- $: le mot compte triple.\n\n");
+    printf("De la meme facon, chaque lettre vaut un certain nombre de points:\nA = 1\tB = 3\tC = 3\tD = 2\tE = 1\tF = 4\tG = 2\tH = 4\tI = 1\tJ = 8\tK = 10\tL = 1\tM = 2\tN = 1\nO = 1\tP = 3\tQ = 8\tR = 1\tS = 1\tT = 1\tU = 1\tV = 4\tW = 10\tX = 10\tY = 10\tZ = 10\t?(joker) = 0\n\n");
+    printf("Le score est calcule en additionnant toutes les lettres des nouveaux mots formes y compris celes deja posees sur la \ngrille. Si un joueur place les sept lettres de son chevalet en une fois gagne 50 points. Ce coup est appele \"scrabble.\"\n\n");
+    printf("     ----------------------------------------------------Pioche----------------------------------------------------\n\n");
+    printf("Nombre d'occurence de chaque lettre:\nA -> 9\tB -> 2\tC -> 2\tD -> 3\tE -> 15\tF -> 2\tG -> 2\tH -> 2\tI -> 8\tJ -> 1\tK -> 1\tL -> 5\tM -> 3\tN -> 6\nO -> 6\tP -> 2\tQ -> 1\tR -> 6\tS -> 6\tT -> 6\tU -> 6\tV -> 2\tW -> 1\tX -> 1\tY -> 1\tZ -> 1\t?(joker) -> 2\n\n");
+    printf("     --------------------------------------------------------------------------------------------------------------\n");
+    printf("------------------------------------------------------------------------------------------------------------------------\n\n\n");
+}
